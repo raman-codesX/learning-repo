@@ -1,9 +1,7 @@
-
 from langgraph.graph import StateGraph, START, END
 from typing import TypedDict, Literal
 from langchain_ollama import ChatOllama
 from pydantic import BaseModel, Field
-
 
 # STATE
 
@@ -12,7 +10,6 @@ class ReviewState(TypedDict):
     neg_break: dict
     sentiment: Literal["positive", "negative"]
     response: str
-
 
 # STRUCTURED OUTPUT SCHEMAS
 
